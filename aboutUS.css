@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-bar {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: black;
+}
+
+.nav-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.nav-tab{
+    outline: none;
+    display: none;
+}
+
+.label {
+    display: none;
+    color: white;
+}
+
+.drop{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.nav-content{
+    grid-column: 3;
+    list-style: none;
+}
+
+.nav-content li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.nav-content li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav-content li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: center;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+}
+
+.nav-content li a:hover::after{
+    transform: scale(1, 1);
+}
+
+.about-img{
+    background: url("jessica-felicio-kgv0t4pI1T4-unsplash.jpg") no-repeat center /cover;
+    width:100%;
+    height:70vh;
+}
+  .about-box{
+        width:100%;
+        height:100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+  .about-box h1{
+    font-size: 30px;
+    color: white;
+    letter-spacing: .5em;
+    width:100%;
+    text-align: center;
+  }
+ .mainInfo{
+   display: grid;
+   grid-template-columns: repeat(1,5fr);
+ }
+ .about-text1 h2{
+  font-family: 'Glegoo', serif;
+  font-size: 30px;
+  width:70%;
+  text-align: center;
+  margin-left: 1.8em;
+  color:black;
+  padding-left: .3em;
+}
+.about-text1 p{
+  color:#787878;
+  font-size: 20px;
+  width:70%;
+  padding-left: 4em;
+  padding-top: 1em;
+}
+.about-text i{
+  font-size: 40px;
+  margin-top: 1em;
+  padding-left: 4em;
+  color: #BABABA;
+}
+.about-text  a {
+  text-decoration: none;
+  padding-top: 2em;
+  color: black;
+  font-family:'Glegoo', serif;
+  padding-left: 8em;
+}
+ .about-text a:hover{
+  color:#F1AD1B;
+  transition: 1s;
+}
+.about-text h3{
+  font-family: 'Glegoo', serif;
+  color:black;
+  font-size: 15px;
+  width:30%;
+  text-align: center;
+  padding-left: 8em;
+}
+.about-text p{
+  font-size: 13px;
+  color:#787878;
+  padding-top: 1em;
+  width:80%;
+  padding-left: 2.5em;
+  text-align: center;
+}
+.subheading-about{
+  text-transform: uppercase;
+  font-family: 'Glegoo', serif;
+  font-size: 25px;
+  padding-left: em;
+  margin-top: 2em;
+  text-align: center;
+  color:black;
+}
+.condition{
+  height: 18vh;
+  text-align: center;
+}
+.condition h4{
+ font-family:'Glegoo', serif;
+ font-size: 15px;
+ padding-left: 1em;
+}
+.condition p{
+ font-family:'Glegoo', serif;
+ font-size: 10px;
+ margin-left: 1em;
+ width:87%;
+}
+.condition h5{
+  float: right;
+  padding-right: 3em;
+  font-size: 18px;
+  margin-top: -5.3em;
+  font-family:'Glegoo', serif;
+}
+ #aboutIcon i{
+  color:brown;
+}
+#aboutIcon2{
+  color:brown;
+}
+#aboutIcon3{
+ color:brown;
+}
+#aboutIcon4{
+  color:brown;
+}
+#aboutIcon5{
+  color:brown;
+}
+#solutionIcon6{
+  color:brown;
+}
+/* .material-icons{
+    text-align: center;
+} */
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 45px 60px;
+    background: linear-gradient(#ad6845, rgb(77, 46, 4));
+}
+
+footer .foot-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;   
+}
+
+footer .foot-container .quick h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .foot-container .quick h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: yellow;
+}
+
+footer .foot-container .quick p{
+    color: #fff;
+}
+
+.socials{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 10px;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.socials li a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: rgb(159, 88, 26);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.socials li a:hover{
+    background: orange;
+}
+
+.socials li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.links{
+    position: relative;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links li a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links li a:hover{
+    color: orange;
+}
+
+.contact{
+    position: relative;
+}
+
+.contact li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.contact li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact li span{
+    color: #fff;
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover{
+    color: orange;
+}
+
+.copyright{
+    width: 100%;
+    background: rgb(77, 46, 4);
+    padding: 8px 100px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1280px) {
+
+    .nav-bar {
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .label{
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+    }
+
+    .nav-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+
+    .nav-box input:checked ~ .nav-content{
+        max-height: 500px;
+    }
+
+    .nav-content li{
+        padding: 15px 0px;
+    }
+
+    .hero-box{
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .hero-box-inner h1{
+        font-size: 30px;
+    }
+
+    .hero-box-inner p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+
+    }
+
+    footer{
+        padding: 20px 40px;
+    }
+
+    footer .foot-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .copyright{
+        padding: 8px 40px;
+    }
+}
+/* media query for desktop*/
+
+@media only screen and (min-width:1024px) and (max-width:1800px){
+
+  header{
+    width: 100%;
+    background-color: #94A8B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: center;
+    transform: translate(-55px, 0px);
+    overflow: hidden;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 70px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+  width: 100%;
+  }
+    .about-img{
+      background-attachment: fixed;
+    }
+    .mainInfo{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      gap:1em;
+      margin-top: 2em;
+      background-color:  white;
+      padding: 1em;
+    }
+    .about-text1{
+      grid-row:1/3;
+      height:50vh;
+    }
+    .about-text1 h2{
+      font-size: 40px;
+      padding-top: 1em;
+      text-align: left;
+    }
+    .about-text1 p{
+      font-size: 20px;
+      width:70%;
+      padding-top: 1em;
+    }
+    .about-text p{
+      font-size: 13px;
+      padding-top: 1em;
+      text-align: left;
+    }
+    .about-text i{
+      padding-left: .5em;
+    }
+    .about-text h3{
+      padding-left: 1em;
+      width:100%;
+      text-align: left;
+    }
+    .about-text  a {
+      text-decoration: none;
+      padding-top: 2em;
+      padding-left: 1.5em;
+    }
+    .blackbfly{
+     margin-top: 2em;
+     width:90%;
+     display: grid;
+     grid-template-columns: repeat(1,6fr);
+     margin-left: 5em;
+   }
+   .subheading-about{
+     text-align: center;
+     font-size: 30px;
+     margin-top: 2em;
+   }
+   .condition h4{
+    font-size: 20px;
+    padding-left: 1em;
+   }
+   .condition p{
+    font-size: 12px;
+    margin-left: 1em;
+   }
+   .condition h5{
+     font-size: 18px;
+     margin-top: -5em;
+   }
+   .condition i{
+    font-size: 40px;
+   }
+  }
+  

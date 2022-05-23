@@ -1,6 +1,6 @@
 # Code4Justice: Design Statement
 
-The website we have created is called Black Butterfly Org. that addresses the issue of African American Suicide
+The website we have created is named Black Butterfly Org. that addresses the issue of African American Suicide
 
 This is a serious issue because: Over the last decade, suicide rates in the United States have increased dramatically among racial and ethnic minorities, and people of color in particular.
 
